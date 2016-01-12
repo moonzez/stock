@@ -17,7 +17,7 @@ Rough process, what happens when vendor proxy resource gets called:
 * add configs for a new vendor api to xws project. TODO LINK.
 In order to access the Vendor API, an API consumer must have the required permission
 Same root will be used to go to the documentation
-* write vendor api
+* write vendor api (xing-vendor_api TODO LINK)
 * write documentation, each vendor api should document all available calls. Will be accessable on [XING developer portal](http://dev.xing.com/docs/vendor_resources)
   * add mime type
   * route
@@ -28,26 +28,17 @@ Same root will be used to go to the documentation
 * The XING API uses "scrambled IDs". It is normal user id + checksum. "1234_abcdef"
 * Use versioning
 
-#OAuth Curl Scripts
+# Test vendor API
+There are several tool to do it
+##OAuth Curl Scripts
 To test vendor API logged in user is needed. To simplify it, there is a
 gem oauth-curl-scripts. It's a bash scripts which generates all Oauth parameters for api call and allow us to add own calls to our vendor api. Currently only for mobile vendor api TODO link!
-how to use it is described here:
-TODO LINK
-copy temp config to config, get consumer token from sandbox/v1/admin
-generate tocken with xAuth
-paste in _config.rb
+How to use it is described here: TODO LINK
+  * copy _config.template to config
+  * get consumer token from your-sandbox/v1/admin
+  * generate access tocken with 
+{code}./xauth premium@gnix.com .test.
+and paste in _config.rb
 
-### iphone-app #
-to test mobile app
-
-### errors ###
-
-read xws guidelines
-
-
-### xing-xws_pilot ###
-test tool
-
-
-xws/engines...events/
-resource-load /endpoint
+## iphone-app
+## xing-xws_pilot
