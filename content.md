@@ -14,17 +14,20 @@ Rough process:
 
 
 # how to develop vendor API
-## add new configurations to xws project  (TODO) link to config on xws master
-## In order to access the Vendor API, an API consumer must have the required permission. Contact xws team to get permissions
-## write vendor api
-## write documentation
+* add new configurations to xws project  (TODO) link to config on xws master
+* In order to access the Vendor API, an API consumer must have the required permission. Contact xws team to get permissions
+* write vendor api
+* write documentation for [XING developer portal](dev.xing.com/docs/vendor_resources)
+** add mime type
+** route
+** documentation controller
+  TODO LINK to confluence! Note required keys!
 
-### TODO: link to how to develop
+TODO: link to how to develop
 
 # Good to know
-## The XING API uses "scrambled IDs". It is normal user id + checksum. "1234_abcdef"
-## Use versioning
-with url is prefered by xws team, but with header is ok too.
+* The XING API uses "scrambled IDs". It is normal user id + checksum. "1234_abcdef"
+* Use versioning
 
 #OAuth Curl Scripts
 To test vendor API logged in user is needed. To simplify it, there is a
