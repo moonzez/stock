@@ -36,7 +36,7 @@ gem oauth-curl-scripts. It's a bash scripts which generates all Oauth parameters
 How to use it is described here: TODO LINK
   * copy _config.template to config
   * get consumer token from your-sandbox/v1/admin
-  * generate access tocken with 
+  * generate access token with
 ```ruby
 ./xauth premium@gnix.com .test.
 ```
@@ -44,3 +44,7 @@ and paste in _config.rb
 
 ### iphone-app
 ### xing-xws_pilot
+
+# xing-vendor_api
+Manages versioning, conditional versioning for vendor api, adds mine types, has test support
+TODO link
