@@ -1,15 +1,26 @@
 # vendor api
-In general the XWS team provides the XING API,
-whoch is a public api and can be used by third parties to interact with XING data.
+XWS team provides the XING API,
+which is a public api and can be used by third parties to interact with XING data.
 But for some cases, when api is relevant only for a small amount of consumers,
 like our mobile tracking api, xws provide Vendor Proxy.
 In this case teams develop api themselves and use the xws infrastructure.
+Rought process:
+* call vendor proxy resource
+* Verify namespace, if it exists
+* Authentication (Oauth and API_KEY for logged out)
+* check permissions for consumer
+* Call the Vendor API
+* Respond with status code and response body
 
 
 # how to develop vendor API
-### LINKS###
+## add new configurations to xws project  (TODO) link to config on xws master
+there are two ways of Authentication (Oauth and API_KEY for logged out),
+we have only logged in, so xws takes care of Authentication. 
 
-### iphone-app ####
+### TODO: link to how to develop
+
+### iphone-app #
 to test mobile app
 
 ### errors ###
@@ -45,4 +56,4 @@ test tool
 xws/engines...events/
 resource-load /endpoint
 
-
+### documentation in developers portal
