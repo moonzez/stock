@@ -38,7 +38,3 @@ gem oauth-curl-scripts. It's a bash scripts which generates all Oauth parameters
 
 ### iphone-app
 ### xing-api_pilot
-
-# xing-vendor_api
-Manages versioning, conditional versioning for vendor api, adds mine types, has test support
-TODO link
